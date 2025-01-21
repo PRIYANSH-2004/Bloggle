@@ -8,7 +8,14 @@ const Image =({src, className, w, h, alt}) =>{
          lqip={{active: true, quality:20}}  //{/* low quality image placeholder */}
         width= {w}
         height={h}
-         alt={alt}>
+         alt={alt}
+         transformation={[
+            {
+                width:w,
+                height:h
+            }
+         ]}
+         >
 
         </IKImage>
     )
