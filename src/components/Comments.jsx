@@ -11,6 +11,11 @@ function Comments() {
       </div>
 
       <Comment/>
+      <Comment/>
+      <Comment/>
+      <Comment/>
+      <Comment/>
+      <Comment/>
     </div>
   )
 }

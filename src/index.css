@@ -12,3 +12,13 @@ body{
 .animatedButton{
     animation-duration: 20000ms;
 }
+
+.ql-toolbar{
+    border:none !important;
+}
+.ql-editor{
+    border:none !important;
+}
+.ql-container{
+    border:none !important;
+}
