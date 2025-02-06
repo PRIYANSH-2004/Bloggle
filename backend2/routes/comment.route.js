@@ -1,9 +1,14 @@
 import express from "express"
+import Comment from "../models/comment.model.js"
 
 const router = express.Router()
 
-router.get("/commenttest",(req, res)=>{
-    res.send("<h1>comment Response </h1>")
+
+// return all posts form database
+// we are making all CRUD requests inside controller folder
+router.get("/", async (req, res)=>{
+    const posts = await Comment.find()
+    res.status(200).send(`Here are the posts fetched from db \n ${posts}`)
 })
 
 
